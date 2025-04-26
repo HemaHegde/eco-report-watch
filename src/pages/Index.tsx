@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import IssueList from '@/components/IssueList';
@@ -7,6 +6,7 @@ import IssueForm from '@/components/IssueForm';
 import ReportButton from '@/components/ReportButton';
 import { mockIssues, Issue } from '@/utils/mockData';
 import { toast } from 'sonner';
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const [issues, setIssues] = useState<Issue[]>(mockIssues);
